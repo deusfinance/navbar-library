@@ -15,7 +15,7 @@ import arrow from './assets/img/arrow-nav.svg';
 
 const Navs = navbarItems
 
-export const Navbar = () => {
+const Navbar = () => {
 
   const web3React = useWeb3React()
   const { chainId, account, activate } = web3React
@@ -207,3 +207,5 @@ export const Navbar = () => {
   </React.Fragment>)
 
 }
+
+export default Navbar
