@@ -5,7 +5,7 @@ import SubNavbar from './components/SubNavbar.jsx';
 import Wallets from './components/Wallets/index.jsx';
 import { addRPC } from './services/addRPC';
 import { SwapService } from './services/SwapService';
-import { getCorrectChainId } from './utils/chain';
+import { getCorrectChainId, deusChains } from './utils/chain';
 import { injected, } from './utils/connectors';
 import navbarItems from "./utils/navs"
 import { formatAddress, getStayledNumber, notify, isDesktop } from './utils/utils';
@@ -105,17 +105,7 @@ const Navbar = () => {
       setMenuMobileClass("close-menu")
   }
 
-
   const connectCalass = account ? "connected" : "connect"
-  //DEUS staking
-
-  const networkNames = {
-      1: "Mainnet",
-      3: "Ropsten",
-      4: "Rinkeby",
-      42: "Kovan",
-      100: "xDAI"
-  }
 
   return (<React.Fragment>
       {showWallets && <Wallets setShow={setShowWallets} />}
@@ -133,7 +123,7 @@ const Navbar = () => {
                   </li>}
 
                   {chainId && <li className="grad-wrap connect-wrap network-name" >
-                      <div className={`grad connected`} style={{ cursor: "default" }}>{networkNames[chainId]}</div>
+                      <div className={`grad connected`} style={{ cursor: "default" }}>{deusChains[chainId]}</div>
                   </li>}
 
                   {chainId && chainId !== getCorrectChainId(location.pathname) && <>
@@ -142,7 +132,7 @@ const Navbar = () => {
                       </li>
                       <li className="grad-wrap  connect-wrap change-network">
                           <div className={`grad connect`} onClick={() => addRPC(account, activate, getCorrectChainId(location.pathname))}>
-                              Change to {networkNames[getCorrectChainId(location.pathname)]}
+                              Change to {deusChains[getCorrectChainId(location.pathname)]}
                           </div>
                       </li>
                   </>}
