@@ -19,6 +19,11 @@
     "react": "^16.0.0"
   },
   "dependencies": {
+    "@web3-react/fortmatic-connector": "^6.1.6",
+    "@web3-react/frame-connector": "^6.0.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.1.9",
+    "@web3-react/walletlink-connector": "^6.1.9",
     "react-toastify": "^7.0.3"
   },
   "files": [
@@ -32,11 +37,6 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.13.13",
     "@web3-react/core": "^6.1.9",
-    "@web3-react/fortmatic-connector": "^6.1.6",
-    "@web3-react/frame-connector": "^6.0.9",
-    "@web3-react/injected-connector": "^6.0.7",
-    "@web3-react/walletconnect-connector": "^6.1.9",
-    "@web3-react/walletlink-connector": "^6.1.9",
     "babel-eslint": "^10.0.3",
     "babel-loader": "8.1.0",
     "clean-webpack-plugin": "^3.0.0",
