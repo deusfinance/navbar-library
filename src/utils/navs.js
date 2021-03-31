@@ -46,12 +46,6 @@ export default [
                 path: "/crosschain/xdai/synchronizer",
                 exact: true,
             },
-            {
-                id: "bsc-sync",
-                text: "BSC",
-                path: "/crosschain/bsc/synchronizer",
-                exact: true,
-            },
         ]
     },
     {
