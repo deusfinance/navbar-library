@@ -10,20 +10,20 @@ export default [
             {
                 id: "swap",
                 text: "SWAP",
-                path: "/swap",
+                path: "https://app.deus.finance/swap",
                 exact: true,
             },
             {
                 id: "staking",
                 text: "STAKING",
-                path: "/staking",
+                path: "https://app.deus.finance/staking",
                 exact: false,
             },
 
             {
                 id: "vaults",
                 text: "VAULTS",
-                path: "/vaults",
+                path: "https://app.deus.finance/vaults",
                 exact: true,
             },
         ]
@@ -37,13 +37,13 @@ export default [
             {
                 id: "mainsync",
                 text: "MAINNET",
-                path: "/synchronizer",
+                path: "https://app.deus.finance/synchronizer",
                 exact: true,
             },
             {
                 id: "xdai-sync",
                 text: "xDAI",
-                path: "/crosschain/xdai/synchronizer",
+                path: "https://app.deus.finance/crosschain/xdai/synchronizer",
                 exact: true,
             },
         ]
@@ -57,20 +57,20 @@ export default [
             {
                 id: "coinbase",
                 text: "COINBASE",
-                path: "/coinbase",
+                path: "https://app.deus.finance/coinbase",
                 exact: true,
 
             },
             {
                 id: "bakkt",
                 text: "BAKKT",
-                path: "/bakkt",
+                path: "https://app.deus.finance/bakkt",
                 exact: true,
             },
             {
                 id: "musk",
                 text: "MUSK",
-                path: "/musk",
+                path: "https://app.deus.finance/musk",
                 exact: true,
             }
         ]
