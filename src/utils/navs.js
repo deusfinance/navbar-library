@@ -55,11 +55,10 @@ export default [
         exact: true,
         children: [
             {
-                id: "coinbase",
-                text: "COINBASE",
-                path: "https://app.deus.finance/coinbase",
+                id: "migrator",
+                text: "COINBASE MIGRATOR",
+                path: "https://app.deus.finance/migrator",
                 exact: true,
-
             },
             {
                 id: "bakkt",
