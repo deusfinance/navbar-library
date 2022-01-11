@@ -1,4 +1,5 @@
-# DEPRICATED
+# DEPRECATED
+
 # deus-navbar
 
 > Navbar library for DeusFinance
